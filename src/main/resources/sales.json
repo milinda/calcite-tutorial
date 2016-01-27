@@ -1,0 +1,16 @@
+{
+  version: '1.0',
+  defaultSchema: 'SALES',
+  schemas: [
+    {
+      name: 'SALES',
+      tables: [
+        {
+          name: 'Orders',
+          type: 'custom',
+          factory: 'org.pathirage.calcite.tutorial.utils.OrdersTableFactory'
+        }
+      ]
+    }
+  ]
+}
